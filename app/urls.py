@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import include, path
+from core.views.pedido import PedidosViewSet
 from core.views.usuario import UsuariosViewSet
 from drf_spectacular.views import (
     SpectacularAPIView,
@@ -14,7 +15,7 @@ router = DefaultRouter()
 
 router.register(r'usuarios', UserViewSet, basename='users')
 router.register(r'usuario', UsuariosViewSet, basename='usuarios')
-
+router.register(r'pedidos', PedidosViewSet, basename='pedidos')
 urlpatterns = [
     path('admin/', admin.site.urls),
     # OpenAPI 3
