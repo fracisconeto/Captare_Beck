@@ -3,6 +3,7 @@ from django.urls import include, path
 from core.views.categoria import CategoriaViewSet
 from core.views.endereco import EnderecoViewSet
 from core.views.pedido import PedidosViewSet
+from core.views.produto import ProdutoViewSet
 from core.views.usuario import UsuariosViewSet
 from drf_spectacular.views import (
     SpectacularAPIView,
@@ -20,6 +21,8 @@ router.register(r'usuarios', UsuariosViewSet, basename='usuarios')
 router.register(r'pedidos', PedidosViewSet, basename='pedidos')
 router.register(r'endereços',EnderecoViewSet, basename='endereços')
 router.register(r'categorias', CategoriaViewSet, basename='categorias')
+router.register(r'produto', ProdutoViewSet, basename='Produtos')
+
 
 
 urlpatterns = [
