@@ -5,3 +5,4 @@ from .endereco import EnderecoSerializer
 from .categoria import CategoriaSerializer
 from .produto import ProdutoSerializers
 from .itens_pedido import ItenSerializer
+from .carrinho import CarrinhoSerializer

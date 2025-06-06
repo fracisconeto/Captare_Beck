@@ -5,3 +5,4 @@ from .endereco import Endereco
 from .categoria import Categoria
 from .produto import Produto
 from .itens_pedido import Iten
+from .carrinho import Carrinho

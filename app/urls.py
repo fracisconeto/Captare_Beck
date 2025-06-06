@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import include, path
+from core.views.carrinho import CarrinhoViewSet
 from core.views.categoria import CategoriaViewSet
 from core.views.endereco import EnderecoViewSet
 from core.views.itens_pedido import ItenViewSet
@@ -24,6 +25,9 @@ router.register(r'endereços',EnderecoViewSet, basename='endereços')
 router.register(r'categorias', CategoriaViewSet, basename='categorias')
 router.register(r'produto', ProdutoViewSet, basename='Produtos')
 router.register(r'Itens', ItenViewSet, basename='Itens')
+router.register(r'carrinhos', CarrinhoViewSet, basename='carrinhos')
+
+
 
 
 
